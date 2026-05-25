@@ -1,0 +1,152 @@
+aid: sliplane
+name: Sliplane
+description: >-
+  Sliplane is a Germany-based Container-as-a-Service (CaaS) platform that lets
+  developers build, run, and monitor Dockerized applications in the cloud with
+  simple, transparent, hourly server pricing and unlimited services per server.
+  The platform positions itself as a European alternative to Heroku, Render,
+  Fly.io, and Railway, offering push-to-deploy from GitHub, one-click
+  deployment of 400k+ Docker Hub images, environment variable and secret
+  management, free SSL certificates, custom domains, daily volume backups,
+  private networking via Twingate, SSH access, health checks, log streaming,
+  and service metrics. Servers are available in Germany, Finland, US East, US
+  West, and Singapore, with five tier sizes ranging from a 2 vCPU / 2 GB Base
+  server at roughly EUR 9/month to a 16 vCPU / 32 GB XX-Large server at
+  roughly EUR 224/month. Sliplane exposes a public REST API at
+  ctrl.sliplane.io/v0 covering identity, projects, services, deployments,
+  domains, events, logs, metrics, pause/unpause, registry credentials,
+  servers, volumes, and OAuth clients, with both API key (api_rw_/api_ro_)
+  and OAuth authentication. Sliplane also operates a hosted Model Context
+  Protocol (MCP) server at mcp.sliplane.io that mirrors the public API for
+  AI-assistant-driven deployment management, alongside a Python MCP reference
+  implementation, a Go SDK for the underlying DataPacket infrastructure, a
+  reverse-proxy image, a Postgres-SSL image, an Open WebUI theme, and
+  numerous Dockerized application boilerplates published under the sliplane
+  GitHub organization.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Container Hosting
+  - Docker Hosting
+  - Container As A Service
+  - Platform As A Service
+  - Push To Deploy
+  - Cloud Infrastructure
+  - European Cloud
+  - Germany
+  - Developer Tools
+  - DevOps
+  - MCP
+url: https://raw.githubusercontent.com/api-evangelist/sliplane/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis:
+  - aid: sliplane:control-api
+    name: Sliplane Control API
+    description: >-
+      The Sliplane Control API is a REST API at https://ctrl.sliplane.io/v0
+      for programmatically managing organizations, projects, services,
+      deployments, custom domains, registry credentials, servers, volumes,
+      events, logs, metrics, and OAuth clients on the Sliplane platform.
+      Authentication is via Bearer token using either organization-scoped API
+      keys (api_rw_org_xxx_secret / api_ro_org_xxx_secret) created in team
+      settings, or OAuth 2.0 client credentials.
+    humanURL: https://docs.sliplane.io/api/getting-started
+    baseURL: https://ctrl.sliplane.io/v0
+    tags:
+      - Container Hosting
+      - Docker
+      - Deployments
+      - Projects
+      - Services
+      - Domains
+      - Volumes
+      - Logs
+      - Metrics
+      - OAuth
+    properties:
+      - type: Documentation
+        url: https://docs.sliplane.io/api/getting-started
+      - type: InteractiveDocumentation
+        url: https://ctrl.sliplane.io
+      - type: Authentication
+        url: https://docs.sliplane.io/api/getting-started
+      - type: SignUp
+        url: https://sliplane.io/signup
+  - aid: sliplane:mcp
+    name: Sliplane MCP Server
+    description: >-
+      The Sliplane MCP server exposes the Sliplane Control API as Model
+      Context Protocol tools so AI assistants (Claude, Cursor, VS Code) can
+      manage deployments, projects, services, and infrastructure on a user's
+      behalf. The hosted endpoint at https://mcp.sliplane.io uses SSE
+      transport with an Authorization Bearer header carrying a Sliplane API
+      key. A reference Python implementation is published under the
+      sliplane/mcp GitHub repository and can also be self-hosted via uv or
+      Docker.
+    humanURL: https://docs.sliplane.io/mcp/getting-started
+    baseURL: https://mcp.sliplane.io
+    tags:
+      - MCP
+      - Model Context Protocol
+      - AI Agents
+      - Deployments
+      - Docker
+    properties:
+      - type: Documentation
+        url: https://docs.sliplane.io/mcp/getting-started
+      - type: SourceCode
+        url: https://github.com/sliplane/mcp
+      - type: Authentication
+        url: https://docs.sliplane.io/mcp/getting-started
+common:
+  - type: Website
+    url: https://sliplane.io
+  - type: Pricing
+    url: https://sliplane.io/pricing
+  - type: Documentation
+    url: https://docs.sliplane.io
+  - type: APIReference
+    url: https://ctrl.sliplane.io
+  - type: MCP
+    url: https://docs.sliplane.io/mcp/getting-started
+  - type: Apps
+    url: https://sliplane.io/apps
+  - type: Tools
+    url: https://sliplane.io/tools
+  - type: Blog
+    url: https://sliplane.io/blog
+  - type: Changelog
+    url: https://sliplane.io/categories/changelog
+  - type: Status
+    url: https://sliplane.instatus.com/
+  - type: About
+    url: https://sliplane.io/about
+  - type: Careers
+    url: https://sliplane.io/careers
+  - type: Contact
+    url: https://sliplane.io/contact
+  - type: Support
+    url: mailto:support@sliplane.io
+  - type: TermsOfService
+    url: https://sliplane.io/terms
+  - type: PrivacyPolicy
+    url: https://www.iubenda.com/privacy-policy/57501407
+  - type: CookiePolicy
+    url: https://www.iubenda.com/privacy-policy/57501407/cookie-policy
+  - type: LegalDisclosure
+    url: https://sliplane.io/legal
+  - type: DataProcessingAgreement
+    url: https://sliplane.io/legal/dpa
+  - type: FairUsePolicy
+    url: https://sliplane.io/fair-use
+  - type: AbuseReport
+    url: https://sliplane.io/abuse-report
+  - type: GitHub
+    url: https://github.com/sliplane
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
