@@ -74,7 +74,7 @@ apis:
         url: https://ctrl.sliplane.io
       - type: Authentication
         url: https://docs.sliplane.io/api/getting-started
-      - type: SignUp
+      - type: Signup
         url: https://sliplane.io/signup
   - aid: sliplane:mcp
     name: Sliplane MCP Server
@@ -119,7 +119,7 @@ common:
     url: https://sliplane.io/tools
   - type: Blog
     url: https://sliplane.io/blog
-  - type: Changelog
+  - type: ChangeLog
     url: https://sliplane.io/categories/changelog
   - type: Status
     url: https://sliplane.instatus.com/
