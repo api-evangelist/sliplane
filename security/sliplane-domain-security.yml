@@ -1,0 +1,26 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: sliplane.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 10 22:04:26 2026 GMT
+  hsts: false
+- host: docs.sliplane.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 10 19:03:29 2026 GMT
+  hsts: false
+- host: ctrl.sliplane.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 10 20:07:08 2026 GMT
+  hsts: false
+domains:
+- domain: sliplane.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

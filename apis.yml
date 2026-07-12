@@ -103,6 +103,10 @@ apis:
       - type: Authentication
         url: https://docs.sliplane.io/mcp/getting-started
 common:
+  - type: TrustCenter
+    url: security/sliplane-trust-center.yml
+  - type: DomainSecurity
+    url: security/sliplane-domain-security.yml
   - type: Website
     url: https://sliplane.io
   - type: Pricing
