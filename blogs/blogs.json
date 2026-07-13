@@ -2,13 +2,14 @@
   "repo": "sliplane",
   "feeds": [
     {
-      "source": "https://sliplane.io/blog",
-      "feed_url": "",
+      "source": "https://sliplane.io/tools",
+      "feed_url": "https://sliplane.io/tools",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape"
+      "method": "none"
     }
   ],
-  "post_count": 7,
-  "fetched": "2026-06-27T13:10:29Z",
+  "post_count": 8,
+  "fetched": "2026-07-11T11:50:51Z",
   "agent_pulled": "2026-06-27"
 }
