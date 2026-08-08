@@ -126,7 +126,7 @@ common:
     url: https://docs.sliplane.io
   - type: APIReference
     url: https://ctrl.sliplane.io
-  - type: MCP
+  - type: Documentation
     url: https://docs.sliplane.io/mcp/getting-started
   - type: Apps
     url: https://sliplane.io/apps
