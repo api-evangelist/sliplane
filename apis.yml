@@ -114,6 +114,9 @@ apis:
       - type: Authentication
         url: https://docs.sliplane.io/mcp/getting-started
 common:
+  - type: License
+    name: MIT
+    url: https://github.com/sliplane/mcp/blob/main/LICENSE
   - type: TrustCenter
     url: security/sliplane-trust-center.yml
   - type: DomainSecurity
