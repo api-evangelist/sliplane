@@ -42,6 +42,18 @@ tags:
   - Container Hosting
   - Docker Hosting
   - Container As A Service
+  - Platform-as-a-Service
+  - Push To Deploy
+  - Cloud Infrastructure
+  - European Cloud
+  - Germany
+  - Developer Tools
+  - DevOps
+  - MCP
+tags_raw:
+  - Container Hosting
+  - Docker Hosting
+  - Container As A Service
   - Platform As A Service
   - Push To Deploy
   - Cloud Infrastructure
@@ -68,6 +80,17 @@ apis:
     humanURL: https://docs.sliplane.io/api/getting-started
     baseURL: https://ctrl.sliplane.io/v0
     tags:
+      - Container Hosting
+      - Docker
+      - Deployment
+      - Project
+      - Services
+      - Domains
+      - Volumes
+      - Logs
+      - Metrics
+      - Authentication
+    tags_raw:
       - Container Hosting
       - Docker
       - Deployments
@@ -101,6 +124,11 @@ apis:
     humanURL: https://docs.sliplane.io/mcp/getting-started
     baseURL: https://mcp.sliplane.io
     tags:
+      - MCP
+      - AI Agents
+      - Deployment
+      - Docker
+    tags_raw:
       - MCP
       - Model Context Protocol
       - AI Agents
