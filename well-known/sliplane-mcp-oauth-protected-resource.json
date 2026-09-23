@@ -1,0 +1,1 @@
+{"resource":"https://mcp.sliplane.io/","authorization_servers":["https://api.sliplane.io/"],"scopes_supported":["full"],"bearer_methods_supported":["header"],"resource_name":"Sliplane MCP Server"}
